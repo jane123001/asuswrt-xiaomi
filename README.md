@@ -22,8 +22,20 @@ Installation process is similar to OpenWRT
 - NAND flash - image needs to be written at 0x600000 offset
 
 ## How to build image from source
-1. cd release/src-ra-5010
-2. make model (currently available models are: rt-mir3g, rt-mir4a, rt-rm2100, rt-r2100)
+1.先安装Ubuntu18.6
+2.安装依赖
+sudo rm -rf /etc/apt/sources.list.d/git-core-ubuntu-ppa-xenial.list
+        sudo add-apt-repository ppa:git-core/ppa
+        sudo dpkg --add-architecture i386
+        sudo apt-get update
+        sudo apt-get upgrade
+        sudo apt-get install libncurses5 libncurses5-dev m4 bison gawk flex libstdc++-4.8-dev g++-multilib g++ \
+        gengetopt git gitk zlib1g-dev autoconf autopoint libtool shtool autogen mtd-utils intltool sharutils \
+        docbook-xsl-* libstdc++5 texinfo dos2unix xsltproc binutils u-boot-tools device-tree-compiler python \
+        qemu gperf liblzo2-dev uuid-dev build-essential lzma-dev liblzma-dev lzma patch cmake intltool yodl yodl-doc \
+        libglib2.0-dev gtk-doc-tools libc6-i386 lib32stdc++6 lib32z1 libelf1:i386 lib32ncurses5 libc6-dev-i386 libstdc++6:i386
+  3.sudo chmod +x ./build.sh
+  4.bash ./build.sh model
 
 ## Missing features
 - No dual-wan support

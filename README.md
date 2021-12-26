@@ -38,7 +38,7 @@ sudo rm -rf /etc/apt/sources.list.d/git-core-ubuntu-ppa-xenial.list
  
  3.sudo chmod +x ./build.sh
  
- 4.bash ./build.sh model
+ 4.bash ./build.sh rt-mir4a model (currently available models are: rt-mir3g, rt-mir4a, rt-rm2100, rt-r2100)
 
 ## Missing features
 - No dual-wan support

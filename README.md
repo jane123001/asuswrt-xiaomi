@@ -23,6 +23,7 @@ Installation process is similar to OpenWRT
 
 ## How to build image from source
 1.先安装Ubuntu18.6
+
 2.安装依赖
 sudo rm -rf /etc/apt/sources.list.d/git-core-ubuntu-ppa-xenial.list
         sudo add-apt-repository ppa:git-core/ppa
@@ -34,8 +35,10 @@ sudo rm -rf /etc/apt/sources.list.d/git-core-ubuntu-ppa-xenial.list
         docbook-xsl-* libstdc++5 texinfo dos2unix xsltproc binutils u-boot-tools device-tree-compiler python \
         qemu gperf liblzo2-dev uuid-dev build-essential lzma-dev liblzma-dev lzma patch cmake intltool yodl yodl-doc \
         libglib2.0-dev gtk-doc-tools libc6-i386 lib32stdc++6 lib32z1 libelf1:i386 lib32ncurses5 libc6-dev-i386 libstdc++6:i386
-  3.sudo chmod +x ./build.sh
-  4.bash ./build.sh model
+ 
+ 3.sudo chmod +x ./build.sh
+ 
+ 4.bash ./build.sh model
 
 ## Missing features
 - No dual-wan support

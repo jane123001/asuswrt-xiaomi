@@ -26,10 +26,20 @@ Installation process is similar to OpenWRT
 
 2.安装依赖
 sudo rm -rf /etc/apt/sources.list.d/git-core-ubuntu-ppa-xenial.list
+
+
         sudo add-apt-repository ppa:git-core/ppa
+        
+        
         sudo dpkg --add-architecture i386
+        
+        
         sudo apt-get update
+        
+        
         sudo apt-get upgrade
+        
+        
         sudo apt-get install libncurses5 libncurses5-dev m4 bison gawk flex libstdc++-4.8-dev g++-multilib g++ \
         gengetopt git gitk zlib1g-dev autoconf autopoint libtool shtool autogen mtd-utils intltool sharutils \
         docbook-xsl-* libstdc++5 texinfo dos2unix xsltproc binutils u-boot-tools device-tree-compiler python \
